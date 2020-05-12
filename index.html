@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Etch-a-sketch</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script defer src="main.js"></script>
+    </head>
+    <body id="cool_bg">
+        <div class="selector">
+            <select id="squares" onchange="gridSize()">
+                <option  onclick="gridSize()" value="16">16 x 16</option>
+                <option onclick="gridSize()" value="32">32 x 32</option>
+                <option onclick="gridSize()" value="64">64 x 64</option>
+                <option onclick ="gridSize()" value="128">128 x 128</option>
+            </select>
+            <button id="reset">reset</button>
+        </div>
+        <div id="container"></div>
+
+    </body>
+
+
+</main>
